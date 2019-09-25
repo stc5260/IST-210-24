@@ -1,0 +1,38 @@
+                                                            Movie Theater
+We are a movie theater trying to find which genre of movies are the most popular.  We are trying to figure out which movies we should show 
+in our theater to bring in the most profit.  On an average day, workers are at the ticket booth selling tickets, snack stand selling 
+snacks, and in the theaters cleaning.  The theater is small so it only has 8 viewing rooms for movies.  Our first table will show the 
+different types of tickets (ie children, students) and their costs.  This will be helpful to reference later when we are examining what
+tickets are bought for movies.  The type of ticket will be the entity and the cost will be the attribute, this is a one-to-one
+relationship.  There will be constraints on the ticket costs to make sure they are not too expensive, the cheapest being $5 and the most
+expensive $15.   The second table will be a real-time table and will show the current movies in the theater and their primary genres 
+(ie horror, thriller, kids).  This table will be helpful for referencing later when we are examining which movies tickets were bought for.
+The entity is the movie and the attribute is the genre with a one-to-one relationship.  The constraint on this table will be the number of
+movies playing in the theater since the theater can only have 12 movies at a time.  The third table shows the average amount of 
+theatergoers each day of the week.  The entity for this table is the days of the week and the attribute is the number of theatergoers with
+a one-to-many relationship.  There is a constraint on the number of theatergoers since there are never more than 3,000 theater goers on 
+the busiest day.  The fourth table shows how many employees work at each spot and their average salary (ie 5 snack bar employees).  The 
+entity is the job and the attributes are the number of employees and the average salary with number of employees being one-to-many 
+relationship and job and average salary being one-to-one.  There is a constraint on this table on the number of employees since the 
+theater can only afford 20 employees.  There is also a constraint on the average salary for each job.  Most of the jobs pay at most $13 an
+hour with manager being the only exception.  Most jobs also have a minimum pay of $10 an hour.  The fifth table will be another real-time 
+table that will show the name of the customer, the movie they were seeing, and the type of ticket they bought.  We can reference other 
+tables with this to find which genre is making the most money.  The entity is the customer and the attributes are the movie and type of
+ticket.  The customer and movie are a one-to-one relationship and the customer and the ticket type are a one-to-one relationship.  The
+first constraint on this table is on the movie because it has to be a movie currently in the theater that is listed on the genre table. 
+The second constraint is on the ticket type since it must be a type specified on the ticket type table.  We will use the data from the
+real-time movie genre table as well as the real-time ticket purchase table.  We will also be using the table that shows the types of 
+tickets that are sold.  This data will be used to find which genre is the most profitable to show more movies of that genre.  As can be
+seen in the diagram below the three important tables are the ticket table, the genre table, and tickets purchased table.  The ticket type
+table will give us the different types of tickets and their costs.  When looking at the tickets purchased table we can use the ticket type
+table to find the costs of the tickets being purchased.  The genre table gives us the primary genre of movies in the theater.  When using
+the tickets purchased table we can reference the genre table to find out the genres of  movies that customers are purchasing tickets for. 
+After amassing the information from these three tables we should be able to have a strong idea of which genres do the best.
+
+
+
+
+
+
+
+
